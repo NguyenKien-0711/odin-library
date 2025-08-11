@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Noto+Serif+JP:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+
+body {
+    background-color: rgba(255, 228, 225, 0.748);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Jersey 20';
+    font-size: 4rem;
+    padding: 1rem 0;
+    margin: 0;
+    height: 3rem;
+    color: #670e0e;
+}
+
+.new-book {
+    border: 1px solid black;
+    border-radius: 10px;
+    color: rgb(253, 240, 217);
+    font-size: 1.5rem;
+    font-family: 'Jersey 20';
+    padding: 1rem 1.5rem;
+    background-color: #a46e6e;
+    display: flex;
+    margin: 3rem auto;
+}
+
+.new-book:hover {
+    background-color: #6a3b3b;
+    color: rgb(255, 255, 151);
+    cursor: pointer;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+}
+
+.card {
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 30rem;
+    height: 25rem;
+}
+
+.add-new-book-form {
+    display: none;
+    padding: 1rem 1.5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    background-color: #fef1e6;
+    width: 30rem;
+    height: 30rem;
+}
+
+label {
+    color: #613737;
+    font-size: 1.5rem;
+    font-family: "Jersey 20";
+}
+
+input {
+    color: #613737;
+    font-size: 1rem;
+    font-family: 'Jersey 20';
+    margin: 1rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem 0.8rem;
+    width: 28rem;
+}
+
+.close-icon {
+    color: #613737;
+    margin-left: 29.5rem;
+    padding: 0;
+}
+
+.close-icon:hover {
+    color: rgb(183, 29, 29);
+    cursor: pointer;
+}
+
+.read-status {
+    margin-top: 0;
+    color: #613737;
+    font-family: 'Jersey 20';
+    font-size: 1.5rem;
+}
+
+.radio-title {
+    font-size: 1.2rem;
+
+}
+
+#read,
+#not-yet {
+    margin: 0;
+    padding: 0;
+    width: 2rem;
+}
+
+.submit-btn {
+    font-size: 1.5rem;
+    font-family: 'Jersey 20';
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.9rem 1.5rem;
+    color: rgb(253, 240, 217);
+    background-color: #a46e6e;
+    display: flex;
+    margin: 2rem auto;
+}
+
+.submit-btn:hover {
+    background-color: #6a3b3b;
+    color: rgb(255, 255, 151);
+    cursor: pointer;
+}
+
+.card-book-name,
+.card-author,
+.card-number-pages {
+    width: 27rem;
+    height: 4rem;
+    font-size: 1.7rem;
+    font-family: 'Jersey 20';
+    margin: 1rem;
+}
+
+.card-status,
+.remove-btn {
+    margin-top: 3rem;
+    margin-left: 3.4rem;
+    font-family: 'Jersey 20';
+    width: 11rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+    color: rgb(253, 240, 217);
+    background-color: #a46e6e;
+    border-radius: 10px;
+}
+
+.card-status:hover,
+.remove-btn:hover {
+    background-color: #6a3b3b;
+    color: rgb(255, 255, 151);
+    cursor: pointer;
+}
